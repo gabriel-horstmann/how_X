@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RotaBC — Passaporte Cultural & Gastronômico</title>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo">Rota<span>BC</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#problema">Problema</a></li>
+      <li><a href="#solucao">Solução</a></li>
+      <li><a href="#rotas">Rotas</a></li>
+      <li><a href="#ideias">Ideias</a></li>
+      <li><a href="#objetivos">Objetivos</a></li>
+      <li><a href="#objetivos" class="nav-cta">Explorar MVP</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Balneário Camboriú · MVP Acadêmico</div>
+      <h1>Turismo local<em>o ano todo.</em></h1>
+      <p class="hero-desc">RotaBC é um passaporte cultural e gastronômico gamificado que descentraliza o turismo,
+        fortalece o comércio de bairro e transforma a exploração da cidade em uma jornada de recompensas.</p>
+      <div class="hero-btns">
+        <a href="#solucao" class="btn-primary">Conhecer o projeto →</a>
+        <a href="#rotas" class="btn-secondary">Ver as rotas</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-tag tag1">📍 Bairro da Barra</div>
+      <div class="passport-card">
+        <div class="passport-header">
+          <div>
+            <div class="title">RotaBC</div>
+            <div class="subtitle">Passaporte Cultural</div>
+          </div>
+          <div style="font-size:2rem">🏅</div>
+        </div>
+        <div style="font-size:0.78rem;color:var(--muted);margin-bottom:0.75rem;font-weight:500;">SELOS CONQUISTADOS
+        </div>
+        <div class="passport-stamp-grid">
+          <div class="stamp active">☕<span class="stamp-label">Café</span></div>
+          <div class="stamp active">🍤<span class="stamp-label">Ostras</span></div>
+          <div class="stamp active">🎨<span class="stamp-label">Arte</span></div>
+          <div class="stamp inactive">🚴<span class="stamp-label">Ciclo</span></div>
+          <div class="stamp inactive">🐟<span class="stamp-label">Pesca</span></div>
+          <div class="stamp inactive">🌿<span class="stamp-label">Trilha</span></div>
+        </div>
+        <div style="margin-bottom:0.5rem">
+          <div class="points-bar">
+            <div class="points-fill"></div>
+          </div>
+          <div class="points-label"><span>650 pontos</span><span>1.000 pts → Ouro</span></div>
+        </div>
+        <div class="badge-row">
+          <div class="badge">🏆 Explorador</div>
+          <div class="badge">☕ Barista</div>
+        </div>
+      </div>
+      <div class="floating-tag tag2">✨ 650 pontos</div>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 30 C360 60 1080 0 1440 30 L1440 60 L0 60 Z" fill="#0a3d62" opacity="0.06" />
+    </svg>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="problem-section" id="problema">
+    <div class="problem-grid">
+      <div>
+        <span class="section-label">O Desafio</span>
+        <h2 class="section-title">A sazonalidade que paralisa a cidade</h2>
+        <p class="section-desc">Balneário Camboriú, um dos maiores polos turísticos do Sul do Brasil, enfrenta uma
+          contradição: enquanto a Avenida Atlântica transborda no verão, o comércio de bairro sobrevive em silêncio nos
+          meses frios.</p>
+        <blockquote class="problem-quote">
+          "O turismo de massa tende a centralizar-se na orla, ignorando os pontos históricos e culturais dos bairros
+          periféricos durante a baixa temporada."
+        </blockquote>
+      </div>
+      <div class="problem-text">
+        <div class="problem-stats">
+          <div class="stat-card">
+            <div class="stat-num">↓70%</div>
+            <div class="stat-desc">Queda estimada no faturamento do comércio de bairro no inverno</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">1 km²</div>
+            <div class="stat-desc">Concentração do fluxo turístico na orla central</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">12 bairros</div>
+            <div class="stat-desc">Regiões com potencial cultural e gastronômico inexplorado</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">Barra & Agreses</div>
+            <div class="stat-desc">Praias históricas praticamente ignoradas pelo turista convencional</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section id="solucao" style="background:var(--white)">
+    <div class="solution-inner">
+      <div class="solution-header">
+        <div>
+          <span class="section-label">A Solução</span>
+          <h2 class="section-title">Um passaporte que transforma exploração em recompensa</h2>
+        </div>
+        <p class="section-desc">RotaBC é uma plataforma web responsiva que usa gamificação para incentivar moradores e
+          visitantes a descobrirem e consumirem nos microempreendimentos locais ao longo de todo o ano.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🗺️</div>
+          <div class="feature-title">Rotas Temáticas</div>
+          <div class="feature-desc">Microempreendimentos mapeados em rotas por gastronomia, patrimônio, cicloturismo e
+            cultura — organizados para guiar o usuário pelos bairros.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <div class="feature-title">Sistema de Pontos</div>
+          <div class="feature-desc">A cada estabelecimento visitado o usuário acumula pontos e avança de nível, criando
+            um ciclo de engajamento contínuo e motivação intrínseca.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏅</div>
+          <div class="feature-title">Badges & Conquistas</div>
+          <div class="feature-desc">Selos digitais desbloqueados ao completar rotas ou visitar locais especiais —
+            persistidos localmente para validar a jornada do usuário.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <div class="feature-title">Mobile-First</div>
+          <div class="feature-desc">Interface responsiva projetada para uso em campo, com foco na usabilidade durante a
+            exploração presencial dos bairros.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏪</div>
+          <div class="feature-title">Vitrine Local</div>
+          <div class="feature-desc">Pequenos comércios ganham visibilidade qualificada, atraindo um público que se
+            engaja ativamente com a economia do bairro.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💾</div>
+          <div class="feature-title">Persistência Local</div>
+          <div class="feature-desc">Banco de dados simulado com persistência em localStorage garante que a jornada do
+            usuário seja salva sem necessidade de servidor externo.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROTAS -->
+  <section id="rotas">
+    <div class="routes-inner">
+      <div class="routes-header">
+        <div>
+          <span class="section-label">Explorar</span>
+          <h2 class="section-title">As rotas do RotaBC</h2>
+        </div>
+        <p style="color:var(--muted);font-size:0.9rem;max-width:280px;text-align:right">Cada rota reúne estabelecimentos
+          e pontos culturais de uma mesma temática</p>
+      </div>
+      <div class="routes-grid">
+        <div class="route-card r1">
+          <div class="route-bg"></div>
+          <div class="route-overlay"></div>
+          <div class="route-content">
+            <div class="route-icon">🌊</div>
+            <div class="route-name">Rota do Mar</div>
+            <div class="route-places">Barra · Prainha · Agreses</div>
+            <div class="route-badge">8 pontos de interesse</div>
+          </div>
+        </div>
+        <div class="route-card r2">
+          <div class="route-bg"></div>
+          <div class="route-overlay"></div>
+          <div class="route-content">
+            <div class="route-icon">🍽️</div>
+            <div class="route-name">Rota Gastronômica</div>
+            <div class="route-places">Centro · Municipio · Bairros</div>
+            <div class="route-badge">12 estabelecimentos</div>
+          </div>
+        </div>
+        <div class="route-card r3">
+          <div class="route-bg"></div>
+          <div class="route-overlay"></div>
+          <div class="route-content">
+            <div class="route-icon">🚴</div>
+            <div class="route-name">Rota Verde</div>
+            <div class="route-places">Trilhas · Parques · Mirantes</div>
+            <div class="route-badge">6 paradas naturais</div>
+          </div>
+        </div>
+        <div class="route-card r4">
+          <div class="route-bg"></div>
+          <div class="route-overlay"></div>
+          <div class="route-content">
+            <div class="route-icon">🎭</div>
+            <div class="route-name">Rota Cultural</div>
+            <div class="route-places">Museus · Ateliês · Memória</div>
+            <div class="route-badge">5 espaços culturais</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GERAÇÃO DE IDEIAS -->
+  <section class="process-section" id="ideias">
+    <div class="process-inner">
+      <div class="process-header">
+        <span class="section-label">Processo Criativo</span>
+        <h2 class="section-title">Como chegamos ao RotaBC</h2>
+        <p class="section-desc">A ideia foi resultado de um processo estruturado de geração e análise de alternativas,
+          partindo da observação da realidade local.</p>
+      </div>
+      <div class="process-timeline">
+        <div class="timeline-item">
+          <div class="timeline-content-left">
+            <div class="tl-title">Observação do Problema</div>
+            <div class="tl-desc">Identificação do impacto da sazonalidade no comércio de bairro e da hiperconcentração
+              turística na Av. Atlântica durante o verão.</div>
+          </div>
+          <div class="timeline-node">👁️</div>
+          <div class="timeline-content-right">
+            <div class="tl-title">Dados Coletados</div>
+            <div class="tl-desc">Queda drástica no faturamento nos meses de outono/inverno · Bairros como Barra e Praias
+              Agreses praticamente ignorados pelo turismo convencional.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content-left">
+            <div class="tl-title">Brainstorming</div>
+            <div class="tl-desc">Levantamento de diversas soluções sem julgamento inicial — todas as possibilidades
+              foram exploradas.</div>
+            <div class="idea-chips">
+              <span class="chip">Guia impresso</span>
+              <span class="chip">App de cupons</span>
+              <span class="chip">Totens físicos</span>
+              <span class="chip">Plataforma gamificada</span>
+            </div>
+          </div>
+          <div class="timeline-node">💡</div>
+          <div class="timeline-content-right">
+            <div class="tl-title">Técnica utilizada</div>
+            <div class="tl-desc">Sessão aberta de brainstorming com pensamento livre, sem limitações iniciais,
+              explorando desde soluções simples até sistemas complexos como realidade aumentada.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content-left">
+            <div class="tl-title">Mapas Mentais</div>
+            <div class="tl-desc">Organização visual das ideias a partir do conceito central: "fomento à economia e ao
+              turismo local".</div>
+            <div class="idea-chips">
+              <span class="chip">Gastronomia de inverno</span>
+              <span class="chip">Patrimônio histórico</span>
+              <span class="chip">Cicloturismo</span>
+              <span class="chip">Comércio de bairro</span>
+            </div>
+          </div>
+          <div class="timeline-node">🗂️</div>
+          <div class="timeline-content-right">
+            <div class="tl-title">Estruturação</div>
+            <div class="tl-desc">Os mapas mentais permitiram visualizar as necessidades da comunidade e as formas de
+              conexão entre os diferentes aspectos do problema.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content-left">
+            <div class="tl-title">Desconstrução do Problema</div>
+            <div class="tl-desc">Divisão em aspectos menores: falta de visibilidade, desinteresse no inverno e ausência
+              de incentivos para explorar novos bairros.</div>
+          </div>
+          <div class="timeline-node">🔍</div>
+          <div class="timeline-content-right">
+            <div class="tl-title">Insight Central</div>
+            <div class="tl-desc">A solução eficiente deveria focar em engajamento contínuo via dinâmicas lúdicas e
+              organização atrativa das localidades.</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content-left">
+            <div class="tl-title">Seleção & Refinamento</div>
+            <div class="tl-desc">Critérios aplicados: viabilidade técnica, simplicidade de desenvolvimento, prazo
+              acadêmico e aplicabilidade no contexto local.</div>
+          </div>
+          <div class="timeline-node">✅</div>
+          <div class="timeline-content-right">
+            <div class="tl-title">Resultado: RotaBC</div>
+            <div class="tl-desc">Plataforma web responsiva com passaporte gamificado, banco de dados simulado e
+              persistência local — viável, acessível e impactante.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAMIFICAÇÃO -->
+  <section class="gamification-section" id="gamificacao">
+    <div class="gamification-inner">
+      <div class="gamification-grid">
+        <div>
+          <span class="section-label">Mecânica</span>
+          <h2 class="section-title">Gamificação a serviço da comunidade</h2>
+          <p class="section-desc" style="margin-bottom:2rem">Conceitos modernos de gamificação transformam o engajamento
+            social em uma experiência lúdica e contínua, gerando impacto positivo direto na economia local.</p>
+          <div class="badges-showcase">
+            <div class="badge-item">
+              <div class="badge-emoji">🌊</div>
+              <div class="badge-info">
+                <div class="badge-name">Filho do Mar</div>
+                <div class="badge-req">Visitar 3 pontos litorâneos</div>
+              </div>
+            </div>
+            <div class="badge-item">
+              <div class="badge-emoji">☕</div>
+              <div class="badge-info">
+                <div class="badge-name">Barista Local</div>
+                <div class="badge-req">5 cafeterias de bairro</div>
+              </div>
+            </div>
+            <div class="badge-item">
+              <div class="badge-emoji">🎭</div>
+              <div class="badge-info">
+                <div class="badge-name">Guardião Cultural</div>
+                <div class="badge-req">Completar a Rota Cultural</div>
+              </div>
+            </div>
+            <div class="badge-item">
+              <div class="badge-emoji">🏆</div>
+              <div class="badge-info">
+                <div class="badge-name">Explorador Ouro</div>
+                <div class="badge-req">1.000 pontos acumulados</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="score-demo">
+            <div class="score-header">
+              <div class="avatar">🧑</div>
+              <div>
+                <div class="name">Usuário Explorador</div>
+                <div class="level">⭐ Nível Prata · 650 pts</div>
+              </div>
+            </div>
+            <div class="score-row">
+              <span class="label">Rotas concluídas</span>
+              <span class="value">2 de 4</span>
+            </div>
+            <div class="score-row">
+              <span class="label">Estabelecimentos visitados</span>
+              <span class="value">13 locais</span>
+            </div>
+            <div class="score-row">
+              <span class="label">Badges conquistados</span>
+              <span class="value">3 badges</span>
+            </div>
+            <div class="score-row">
+              <span class="label">Próxima conquista</span>
+              <span class="value">350 pts</span>
+            </div>
+            <div style="margin-top:1.25rem">
+              <div
+                style="display:flex;justify-content:space-between;font-size:0.78rem;color:rgba(255,255,255,0.5);margin-bottom:6px">
+                <span>Prata</span><span>Ouro</span>
+              </div>
+              <div style="background:rgba(255,255,255,0.1);border-radius:50px;height:6px">
+                <div
+                  style="background:linear-gradient(90deg,var(--sea),var(--sun));height:100%;border-radius:50px;width:65%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJETIVOS -->
+  <section class="objectives-section" id="objetivos">
+    <div class="objectives-inner">
+      <div class="objectives-grid">
+        <div>
+          <span class="section-label">Objetivos do Projeto</span>
+          <h2 class="section-title">O que o RotaBC busca alcançar</h2>
+          <p style="color:var(--muted);font-size:0.95rem;line-height:1.7;margin-bottom:2rem">Além do objetivo geral, o
+            projeto se estrutura em três frentes específicas que guiam o desenvolvimento do MVP.</p>
+          <div class="obj-card">
+            <div class="obj-icon">📌</div>
+            <div class="obj-text">
+              <div class="obj-title">Mapear microempreendimentos locais</div>
+              <div class="obj-desc">Organizar os comércios de bairro em rotas temáticas coerentes, dando visibilidade a
+                quem mais precisa durante a baixa temporada.</div>
+            </div>
+          </div>
+          <div class="obj-card">
+            <div class="obj-icon">📐</div>
+            <div class="obj-text">
+              <div class="obj-title">Interface mobile-first intuitiva</div>
+              <div class="obj-desc">Elaborar um design centrado no usuário em campo, com navegação simples e fluxos
+                otimizados para uso em movimento.</div>
+            </div>
+          </div>
+          <div class="obj-card">
+            <div class="obj-icon">💾</div>
+            <div class="obj-text">
+              <div class="obj-title">Lógica de pontuação com persistência</div>
+              <div class="obj-desc">Implementar um sistema de badges e conquistas com armazenamento local para validar e
+                registrar a jornada do usuário sem servidor externo.</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="main-obj">
+            <div class="mo-label">Objetivo Geral</div>
+            <div class="mo-title">Desenvolver o RotaBC como Mínimo Produto Viável</div>
+            <div class="mo-desc">Uma plataforma web responsiva baseada em um passaporte cultural e gastronômico
+              gamificado para incentivar o comércio e o turismo local em Balneário Camboriú durante a baixa temporada.
+              <br><br>
+              A solução foca na descentralização do fluxo turístico, distribuindo renda de forma mais justa entre os
+              microempreendedores e preservando a memória histórica e cultural da cidade.
+            </div>
+            <span class="mvp-tag">MVP · Trabalho Acadêmico</span>
+          </div>
+          <div
+            style="margin-top:1.5rem;background:var(--leaf-light);border-radius:var(--radius);padding:1.25rem;border:1px solid rgba(45,106,79,0.15)">
+            <div
+              style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--leaf);margin-bottom:0.5rem;font-weight:500">
+              Impacto Esperado</div>
+            <p style="font-size:0.9rem;color:#1a4731;line-height:1.65">Distribuição mais justa da renda entre
+              microempreendedores · Preservação da memória histórica e cultural · Engajamento sustentável ao longo de
+              todo o ano.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <span class="section-label">Projeto Acadêmico · UNIVALI / IFC</span>
+      <h2 class="section-title">Tecnologia a serviço da comunidade local</h2>
+      <p class="section-desc">RotaBC nasce como prova de conceito de que design de interação e gamificação podem
+        resolver problemas reais de sazonalidade econômica em cidades turísticas.</p>
+      <div class="cta-btns">
+        <a href="#solucao" class="btn-primary">Ver a solução completa →</a>
+        <a href="#ideias" class="btn-secondary">Como surgiu a ideia</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo">Rota<span>BC</span></div>
+    <p>Passaporte Cultural & Gastronômico · Balneário Camboriú, SC</p>
+    <p>Trabalho Acadêmico · Design de Interação · 2025</p>
+  </footer>
+
+  
+</body>
+
+</html>
